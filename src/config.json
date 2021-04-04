@@ -1,0 +1,28 @@
+{
+  "name": "Slack-Button-Trigger",
+  "type": "trigger",
+  "execProgram": "node",
+  "main": "app.js",
+  "imgUrl": "logo.png",
+  "version": "1.0.0",
+  "description": "Handles Slack Buttons webhooks",
+  "methods": [
+    {
+      "name": "webhookButton",
+      "route": "post /webhook/slack/button",
+      "viewName": "Button Action Trigger",
+      "params": [
+        {
+          "name": "signingSecert",
+          "viewName": "Signing Secret",
+          "type": "string"
+        },
+        {
+          "name": "valuePat",
+          "viewName": "Button Value Pattern",
+          "type": "string"
+        }
+      ]
+    }
+  ]
+}

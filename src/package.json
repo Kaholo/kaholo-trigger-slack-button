@@ -1,0 +1,13 @@
+{
+  "name": "kaholo-trigger-slack-button",
+  "version": "1.0.0",
+  "description": "Handles Slack Button Webhooks",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "minimatch": "^3.0.4"
+  }
+}
