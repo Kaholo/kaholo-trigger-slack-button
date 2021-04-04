@@ -4,7 +4,7 @@ Simple trigger for slack buttons webhooks integration with Kaholo.
 ## How to use:
 After installing the trigger on Kaholo,
 Follow this [documentation](https://api.slack.com/legacy/message-buttons) to send a request to a webhook through buttons in your slack application.
-*
+* Please Notice! Interactive buttons only work when sending the buttons as attachments or as blocks.
 
 ## Button Action Trigger
 Triggers whenever there is a post request sent from slack buttons.
