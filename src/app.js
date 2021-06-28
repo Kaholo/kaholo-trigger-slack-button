@@ -1,10 +1,7 @@
 const { verifySignature } = require(`./helpers`);
 const minimatch = require("minimatch");
 
-async function webhookButton(req, res, settings, triggerControllers) {
-  if (!triggerControllers) {
-    return res.status(400).send("triggers cannot be nil");
-  }
+async function webhookButton(req, res, settings, triggerControllers) {  
   if (req.body.challenge){
     return res.status(200).send(req.body.challenge);
   }
